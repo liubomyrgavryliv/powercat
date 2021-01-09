@@ -1,10 +1,17 @@
 [
   {
-    "name": "inspire",
-    "path": "/inspire",
-    "component": "/home/liubomyr-gavryliv/git-repositories/powercat/pages/inspire.vue",
-    "chunkName": "pages/inspire",
-    "_name": "_6764bf1e"
+    "name": "about",
+    "path": "/about",
+    "component": "/home/liubomyr-gavryliv/git-repositories/powercat/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_3d54b364"
+  },
+  {
+    "name": "contacts",
+    "path": "/contacts",
+    "component": "/home/liubomyr-gavryliv/git-repositories/powercat/pages/contacts.vue",
+    "chunkName": "pages/contacts",
+    "_name": "_7481394c"
   },
   {
     "name": "index",
