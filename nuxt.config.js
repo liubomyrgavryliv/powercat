@@ -60,23 +60,28 @@ export default {
     theme: {
       dark: false,
       themes: {
+        options: {
+          customProperties: true
+        },
         dark: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
+          secondary: colors.indigo.darken4,
+          info: colors.teal.darken1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
+          background: colors.cyan.darken5
         },
         light: {
-          primary: colors.blue.lighten5,
+          primary: colors.blue.lighten1,
           accent: colors.grey.darken3,
           secondary: colors.indigo.darken2,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
+          background: colors.cyan.lighten5
         },
       },
     },

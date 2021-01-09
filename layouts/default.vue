@@ -1,5 +1,5 @@
 <template>
-  <v-app light>
+  <v-app dark>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -31,16 +31,18 @@
       hide-on-scroll
       color="secondary"
       >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="white" />
+      <v-app-bar-nav-icon @click="drawer = !drawer" color="white" />
       <v-toolbar-title v-text="title" class="white--text" />
+      <v-spacer></v-spacer>
+      <v-switch v-model="$vuetify.theme.dark" />
     </v-app-bar>
     <v-main>
       <v-container>
         <nuxt />
       </v-container>
     </v-main>
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+    <v-footer :absolute="!fixed" app color="secondary">
+      <span class='white--text'>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>
@@ -70,10 +72,16 @@ export default {
         },
       ],
       miniVariant: false,
-      right: true,
-      rightDrawer: false,
       title: 'powercat',
     }
   },
 }
 </script>
+<style scoped>
+.theme--dark.v-application {
+  background-color: var(--v-background-base, #121212) !important;
+}
+.theme--light.v-application {
+  background-color: var(--v-background-base, white) !important;
+}
+</style>

@@ -14,6 +14,13 @@
     "_name": "_7481394c"
   },
   {
+    "name": "product",
+    "path": "/product",
+    "component": "/home/liubomyr-gavryliv/git-repositories/powercat/pages/product.vue",
+    "chunkName": "pages/product",
+    "_name": "_3bcc2ff4"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/liubomyr-gavryliv/git-repositories/powercat/pages/index.vue",
