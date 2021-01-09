@@ -1,0 +1,16 @@
+[
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "/home/liubomyr-gavryliv/git-repositories/powercat/pages/inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_6764bf1e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/liubomyr-gavryliv/git-repositories/powercat/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_5d0c8e29"
+  }
+]
