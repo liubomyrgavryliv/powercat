@@ -17,6 +17,8 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: "preconnect", href: "https://fonts.gstatic.com" }],
+    link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cabin&display=swap' }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -47,14 +49,30 @@ export default {
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
+    treeShake: true,
     customVariables: ['~/assets/variables.scss'],
+    defaultAssets: {
+      font: {
+        family: 'Cabin' 
+      },
+      icons: 'mdi'
+    },
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3,
+        },
+        light: {
+          primary: colors.blue.lighten5,
+          accent: colors.grey.darken3,
+          secondary: colors.indigo.darken2,
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,

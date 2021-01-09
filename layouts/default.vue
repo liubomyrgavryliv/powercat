@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app light>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -24,9 +24,15 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title v-text="title" />
+    <v-app-bar 
+      :clipped-left="clipped" 
+      fixed 
+      app 
+      hide-on-scroll
+      color="secondary"
+      >
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="white" />
+      <v-toolbar-title v-text="title" class="white--text" />
     </v-app-bar>
     <v-main>
       <v-container>
@@ -53,12 +59,12 @@ export default {
           to: '/',
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-information',
           title: 'Про нас',
           to: '/about',
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-email',
           title: 'Контакти',
           to: '/contacts',
         },
