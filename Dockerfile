@@ -11,4 +11,4 @@ COPY . .
 # expose port 3000 to the host
 EXPOSE 3000
 
-CMD ["sh", "start_prod.sh"]
+CMD ["sh", "start_dev.sh"]
